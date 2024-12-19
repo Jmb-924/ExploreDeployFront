@@ -1,0 +1,99 @@
+.input-form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 4px 0px 4px -4px;
+}
+
+.input-form.flexed {
+   width: 49%;
+   display: flex;
+   flex-direction: column;
+   margin: 4px 0px 4px -4px;
+}
+
+.input-form.flexed-2 {
+   width: 32%;
+}
+
+.input-form.checkbox {
+   flex-direction: row-reverse;
+   align-items: start;
+}
+
+.input-form label {
+   width: 100%;
+   margin: 2px 4px;
+}
+
+.input-form input {
+   width: 100%;
+   height: 1.5rem;
+   border: 1.5px solid;
+   border-radius: 0.5rem;
+   padding: 4px 0px 4px 6px;
+}
+
+.input-form .msg-error-input {
+   font-size: 12px;
+   margin: 2px 4px;
+   display: none;
+}
+
+.error-input {
+   border: 1.5px solid red !important;
+}
+
+.error-label {
+   color: red;
+}
+
+.msg-error-input.show-msg {
+   display: block;
+   color: red;
+}
+
+.table-data-p {
+   width: 100%;
+}
+
+.table-data-p th {
+   border: 1px solid;
+}
+
+.table-data-p td {
+   border: 1px solid gray;
+}
+
+.img-selected {
+   width: 110px;
+   height: 110px;
+   background: black;
+   position: relative;
+}
+
+
+.img-selected .r-hovered-img {
+   position: absolute;
+   /* z-index: 2; */
+   top: 0;
+   transform: scale(0);
+   transition: 0.5s;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0px 0px 0px 0px;
+
+   background: #888888a2;
+   width: 100%;
+   height: 100%;
+   max-height: 220px;
+}
+
+.remove-hovered-img:hover+.r-hovered-img {
+   text-decoration: none;
+   color: white;
+   transform: scale(1);
+}

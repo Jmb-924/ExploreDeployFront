@@ -1,0 +1,339 @@
+.container {
+   /* width: 100%; */
+   min-height: 100vh;
+   height: auto;
+   position: relative;
+   padding: 0px 0px;
+   margin: 85px 0px 20px;
+   overflow: hidden;
+   box-sizing: border-box;
+   /* background: whitesmoke; */
+}
+
+.container-producto {
+   width: 100%;
+   max-width: 1031px;
+   /* min-height: 80vh; */
+   height: auto;
+
+    position: relative;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    margin: 0px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    /* background: gray; */
+}
+
+.img-container {
+   width: 100%;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+   max-height: 430px;
+   box-sizing: border-box;
+   max-width: 555px;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   /* background: black; */
+}
+
+
+.img-container-view {
+   height: 580px;
+   width: 530px;
+   background: gray;
+   padding: 30px 40px;
+   box-sizing: border-box;
+}
+
+.img-product-view {
+   width: 100%;
+   height: 100%;
+}
+
+.img-container-preview {
+   background: gray;
+   padding: 30px 40px;
+   box-sizing: border-box;
+   width: 530px;
+}
+
+.img-product-preview {
+   width: 100%;
+   height: 100%;
+   margin: 0px 0px;
+   padding: 0px 5px;
+   box-sizing: border-box;
+}
+
+.container-info {
+   width: 100%;
+   height: auto;
+   padding: 10px 20px 20px 20px;
+   box-sizing: border-box;
+   max-width: 470px;
+   /* max-height: 430px; */
+   background: gray;
+}
+
+.top-info {
+   width: 100%;
+   height: 30px;
+   margin: 0px 0px -11px 0px;
+   padding: 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 18px;
+}
+
+.bottom-info {
+   width: 100%;
+   height: 30px;
+   margin: -18px 0px -11px 0px;
+   padding: 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 18px;
+}
+
+.bottom-info.center-stars {
+   justify-content: center;
+}
+
+#compra-section, #notas-section, #perfil-section, #description-section {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   max-width: 410px;
+   max-height: 290px;
+   overflow-y: auto;
+}
+
+.des-space {
+   background: #213547;
+   border: 5px solid black;
+   border-radius: 10px;
+   padding: 10px 10px ;
+}
+
+.des-des {
+   padding: 0px 35px;
+   margin: 0px;
+   text-align: justify;
+}
+
+.des-title {
+   padding: 0px;
+   margin: 0px;
+}
+
+.container-reviews-producto {
+   position: relative;
+   width: 100%;
+   max-width: 1031px;
+   /* min-height: 650px; */
+   height: 100%;
+   margin: 15px auto 0px;
+
+   background: gray;
+   display: flex;
+   justify-content: flex-start;
+   align-items: start;
+   overflow: hidden;
+   position: relative;
+}
+
+.container-review {
+   width: 70%;
+   height: 100%;
+   max-height: 750px;
+   overflow-y: auto;
+   position: relative;
+   background: black;
+}
+
+.rev-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 2px solid gray;
+   padding: 10px 10px;  
+}
+
+.rev-top h4 {
+   margin: 0px;
+   padding: 0px;
+}
+
+.rev-top button {
+   height: 30px;
+   padding: 5px 30px;
+}
+
+.rev-rev {
+   padding: 10px;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.reviews-db {
+   display: flex;
+   flex-direction: column;
+   margin: 0px auto;
+   padding: 15px;
+   gap: 15px;
+   /* justify-content: center; */
+   /* align-items: center; */
+   width: 100%;
+}
+
+.without-revs {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   font-size: 20px;
+   padding: 14px 20px;
+   margin: 0;
+   max-width: 650px;
+   background: #213547;
+   border-radius: 10px;
+   position: relative;
+ }
+
+.product-card-option {
+   width: 24%;
+   height: auto;
+   position: -webkit-sticky;
+   top: 0rem;
+   right: 0px;
+   padding: 10px 10px;
+   background: #213547;
+   margin: 0pc auto;
+}
+
+.pf-space {
+   display: block;
+}
+
+.show-form-cel {
+   width: 100%;
+   margin: 10px auto 0px;
+   height: 35px;
+   display: none;
+}
+
+.hide-ele {
+   display: none;
+}
+
+
+
+@media (max-width: 392px) {
+   .container {
+      margin-top: 100px;
+   }
+   .container-producto {
+      flex-direction: column;
+      align-items: center;
+   }
+   .img-container-view {
+      height: 230px;
+   }
+   .img-container-view, .img-container-preview {
+      max-width: 375px !important;
+   }
+   #compra-section, #notas-section, #perfil-section, #description-section {
+      max-width: 300px;
+   }
+   .container-review {
+      width: 100%;
+      padding: 10px 15px 10px 5px;
+      box-sizing: border-box;
+      /* max-width: 370px; */
+   }
+   .product-card-option {
+      position: fixed;
+      z-index: 2;
+      width: 95%;
+      top: 35px;
+      left: 0px;
+      right: 0px;
+   }
+   .reviews-db {
+      padding: 5px;
+   }
+   .show-form-cel {
+      display: block;
+   }
+   .pf-space {
+      display: none;
+   }
+}
+
+@media (max-width: 767px) {
+   .container {
+      margin-top: 100px;
+   }
+   .container-producto {
+      flex-direction: column;
+      align-items: center;
+   }
+   .img-container-view {
+      height: 230px;
+   }
+   .img-container-view, .img-container-preview {
+      max-width: 395px !important;
+      margin: 0px auto;
+   }
+   #compra-section, #notas-section, #perfil-section, #description-section {
+      max-width: 330px;
+   }
+   .container-info {
+      max-width: 390px;
+      margin: 0px auto;
+      
+   }
+   .container-review {
+      width: 100%;
+      padding: 10px 15px 10px 5px;
+      box-sizing: border-box;
+      /* max-width: 370px; */
+   }
+   .product-card-option {
+      position: fixed;
+      z-index: 2;
+      width: 96%;
+      top: 35px;
+      left: 0px;
+      right: 0px;
+   }
+   .reviews-db {
+      padding: 5px;
+   }
+   .show-form-cel {
+      display: block;
+   }
+   .pf-space {
+      display: none;
+   }
+}
+
+@media (max-width: 1365px) {
+   .img-container-view, .img-container-preview {
+      max-width: 420px;
+   }
+   #compra-section, #notas-section, #perfil-section, #description-section {
+      max-width: 330px;
+      /* margin: 0px auto; */
+   }  
+}
+@media (min-width: 1366px) {
+
+}

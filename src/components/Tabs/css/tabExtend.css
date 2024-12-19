@@ -1,0 +1,119 @@
+.tabs-ex {
+   width: 100%;
+   height: auto;
+   padding: 0px;
+   margin: 0px;
+   position: relative;
+}
+
+.headers-tabs-ex {
+   width: 100%;
+   height: 100%;
+   max-height: 150px;
+   padding: 0px;
+   margin: 0px 0px -20px 0px;
+
+   display: flex;
+   align-items: center;
+   overflow-x: auto;
+}
+
+::-webkit-scrollbar{
+   width: 0px;
+   height: 0px;
+ }
+
+.header-ex {
+   padding: 10px 15px 5px 15px;
+   transition: .8s ease;
+   z-index: 2;
+   /* background: gray; */
+   text-wrap: nowrap;
+}
+
+.header-ex.active-header-ex {
+   border-bottom: none;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   border-top: 1px solid black;
+
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   opacity: 1;
+   color: black;
+   
+   background: gray;
+}
+
+.header-ex.inactive-header-ex {
+   border-bottom: 0px solid black;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+
+   opacity: 0.7;
+   color: gray;
+}
+
+.children-tabs-ex {
+   width: 100%;
+   height: 100%;
+   /* min-height: 310px; */
+   /* max-width: 450px; */
+   padding: 0px;
+   margin: 0px 0px 15px 0px;
+   border-radius: 0px 15px 15px 15px;
+   /* border-right: 1px solid black; */
+   /* border-left: 1px solid black; */
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   /* border-bottom: 1px solid black; */
+   position: relative;
+}
+
+
+.children-tabs-ex::before,
+.children-tabs-ex::after {
+    content: "";
+    position: absolute;
+    width: 3px; /* Ancho del borde */
+    height: 55%; /* Altura del borde: 30% del contenedor */
+    background-color: #000; /* Color del borde */
+}
+
+.children-tabs-ex::before {
+    left: 0; /* Borde izquierdo */
+    top: 20%; /* Centrado verticalmente */
+}
+
+.children-tabs-ex::after {
+    right: 0; /* Borde derecho */
+    top: 20%; /* Centrado verticalmente */
+}
+
+.active-r-ex {
+   border-radius: 15px;
+}
+
+.contenedor-child-ex {
+   height: auto;
+   width: 100%;
+   padding: 15px 20px;
+   transition: .8s ease;
+   /* position: absolute; */
+}
+
+.contenedor-child-ex.active-child-ex {
+   opacity: 1;
+   z-index: 1;
+}
+
+.contenedor-child-ex.inactive-child-ex {
+   opacity: 0;
+   z-index: 0;
+   display: none;
+}
+
+.contenedor-child-ex.empty-ex {
+   text-align: center;
+}

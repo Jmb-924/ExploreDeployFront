@@ -1,0 +1,241 @@
+.container-slide {
+   height: auto;
+   box-sizing: border-box;
+   width: 100%;
+   min-height: 88vh;
+   background: black;
+   border-bottom: 1rem solid black;
+   overflow: hidden;
+}
+.slide-op {
+   height: 100%;
+   max-height: 512px;
+   width: 100%;
+   background: black;
+}
+
+.slide-2 {
+   padding: 5rem 5rem;
+   position: relative;
+   z-index: 1;
+}
+
+.slide-2-inter {
+   display: flex;
+   /* cambiar */
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 15px;
+   border-radius: 30px;
+   background: gray;
+}
+
+.inter-2-description {
+   max-width: 555px;
+   margin-left: 0px;
+}
+
+.inter-2-model {
+   background: black;
+   width: 45%;
+   height: 333px;
+   border-radius: 24px;
+   margin: 0px;
+}
+
+.slide-3 {
+   padding: 12rem 9rem;
+   position: relative;
+   z-index: 1;
+}
+
+.slide-3-inter {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+}
+
+.inter-3-data {
+   max-width: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+.we-space {
+   height: auto;
+   padding: 0px;
+   background: gray;
+   border-bottom: 0.5rem solid black;
+}
+
+.we-space-cont {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.we-are-we {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding: 20px 10px;
+   min-height: 400px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   border: 0.5px solid gray;
+}
+
+.we-are-do {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding: 20px 10px;
+   min-height: 400px;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   border: 0.5px solid gray;
+}
+
+.we-are-we:hover > div, .we-are-do:hover > div {
+   scale: 1.1;
+   transition: 1s ease;
+}
+
+.we-are-we:hover .img-back, .we-are-do:hover .img-back {
+   opacity: 0.4;
+   transition: 1s ease;
+}
+
+.icon-zone {
+   z-index: 2;
+   /* display: none; */
+}
+
+.img-back {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   object-fit: fill;
+   background-color: bisque;
+}
+
+
+.recent-content {
+   height: 390px;
+   padding: 1rem 4.5rem;
+   background: brown;
+   border-bottom: 1rem solid black;
+}
+
+.card-lost {
+   width: 100%;
+   min-width: 200px;
+   max-width: 230px;
+   height: 100%;
+   min-height: 330px;
+   border-radius: 14px;
+   background: rgba(255, 255, 255, 0.4);
+   margin: 10px 8px;
+
+   display: flex;
+   place-content: center;
+   text-align: center;
+}
+
+
+@media (max-width: 392px) {
+   .container-slide {
+      min-height: 110vh;
+      overflow: auto;
+   }
+   .slide-op {
+      min-height: 600px;
+   }
+   .slide-2-inter {
+      flex-direction: column;
+   }
+   .inter-2-model {
+      width: 100%;
+   }
+   .we-space-cont {
+      flex-direction: column;
+   }
+   .we-are-we, .we-are-do {
+      padding: 30px;
+      box-sizing: border-box;
+   }
+   .we-are-do {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 767px) {
+   .container-slide {
+      min-height: 88vh;
+      overflow: auto;
+   }
+   .slide-op {
+      min-height: 600px;
+   }
+   .slide-2-inter {
+      flex-direction: column;
+   }
+   .inter-2-model {
+      width: 100%;
+   }
+   .we-space-cont {
+      flex-direction: column;
+   }
+   .we-are-we, .we-are-do {
+      padding: 30px;
+      box-sizing: border-box;
+   }
+   .we-are-do {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 1365px) {
+   .container-slide {
+      min-height: 63vh;
+      overflow: auto;
+   }
+   .slide-2 {
+      padding: 3rem;
+   }
+   .inter-2-description {
+      padding: 0px 15px;
+   }
+   .we-are-we, .we-are-do {
+      padding: 30px;
+      box-sizing: border-box;
+   }
+}
+@media (min-width: 1366px) {
+   .inter-2-description {
+      margin-left: 5%;
+   }
+}
+
+@media (min-width: 1450px) {
+   .container-slide {
+      min-height: 60vh;
+   }
+   .slide-op {
+      min-height: 600px;
+   }
+}

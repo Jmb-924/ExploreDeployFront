@@ -1,0 +1,158 @@
+.prof-cont-info-user {
+   padding: 0px;
+   margin: 80px auto 0px;
+   position: relative;
+   width: 100%;
+   max-width: 916px;
+   height: auto;
+
+   background: black;
+   border: 1px solid white;
+}
+
+.prof-top-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   padding: 15px 35px 5px;
+
+   /* max-height: 90px; */
+}
+
+.prof-space-urs>h2, .prof-space-urs>h4 {
+   padding: 0px;
+   margin: 0px;
+}
+.prof-space-urs>h4 {
+   font-size: 15px;
+}
+.prof-space-urs>h2 {
+   font-size: 20px
+}
+
+.prof-top-info>button {
+   /* height: 50px; */
+   padding: 15px 40px;
+   border: 1px solid;
+   border-radius: 10px;
+}
+
+.prof-space-cont {
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   gap: 0px 30px;
+   padding: 5px 35px 15px;
+}
+
+.prof-space-cont .prof-show-info {
+   display: flex;
+   flex-wrap: wrap;
+
+   gap: 10px 30px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background: gray;
+}
+
+.prof-show-info .prof-space-info {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+}
+
+.prof-space-info>h4, .prof-space-info>p {
+   margin: 0px;
+   padding: 0px;
+}
+
+.prof-space-cont .prof-update-info {
+   height: auto;
+   padding: 0px 15px;
+   border-radius: 5px;
+   background: rgb(47, 47, 47);
+}
+
+.prof-cont-other-info {
+   padding: 0px 35px;
+   margin: 10px auto 50px;
+   position: relative;
+   width: 100%;
+   max-width: 916px;
+   height: auto;
+   box-sizing: border-box;
+
+   /* background: black; */
+   border: 1px solid white;
+
+}
+
+#tb-productos-section, #tb-compra-section, #tb-comments-section, #tb-dir-domicilio-section, #tb-dir-local-section {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   max-width: 805px;
+   max-height: 1290px;
+   overflow-y: auto;
+}
+
+.tb-head-top-add {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.tb-head-top-add>h4 {
+   padding: 0px;
+   margin: 0px;
+}
+
+.tb-head-top-add>a>button, .tb-head-top-add>button {
+   padding: 10px 30px;
+   border: 1px solid;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.tb-show-p-list, .tb-show-compra-list, .tb-show-comm-list, .tb-show-dd-list, .tb-show-dl-list {
+   background:rgb(103, 70, 27)
+}
+
+.tb-show-p-list {
+   margin-top: 20px;
+}
+.tb-show-compra-list {
+   margin-top: 10px;
+}
+.tb-show-comm-list {
+   margin-top: 10px;
+}
+.tb-show-dd-list {
+   margin-top: 10px;
+}
+.tb-show-dl-list {
+   margin-top: 10px;
+}
+
+.mt-tb-with {
+   margin-top: 20px;
+}
+.mt-tb-without {
+   margin-top: 10px;
+}
+
+.tb-without-info {
+   /* width: 100%; */
+   text-align: center;
+   background: rgb(103, 70, 27);
+   padding: 20px 5px;
+   border-radius: 5px 5px;
+}
+
+.prof-d-hide, .hideTabCont {
+   display: none;
+}
+
+.showTabCont {
+   display: block;
+}
